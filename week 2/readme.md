@@ -2,52 +2,48 @@ Output of the code is :
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-This project contains a simple implementation of a singly linked list using Python. It is designed to help beginners understand how linked lists work and how to perform basic operations like appending, printing, and deleting nodes.
+# Linked List in Python
 
-Features
- Node Class
- Represents each element in the list. Each node contains:
+This project demonstrates a basic implementation of a **singly linked list** using object-oriented programming in Python. It supports adding nodes, displaying the list, and deleting nodes by position.
 
-Data
- A pointer to the next node
+## Description
 
-LinkedList Class
- Manages the linked list. It includes the following methods:
+The program defines two main classes:
 
-append(data)
- Adds a new node with the given data to the end of the list.
+**Node**  
+Represents a single element in the linked list. Each node contains:
+- Data
+- A reference (`next`) to the next node in the list
 
-print_list()
- Prints all the elements in the list from head to tail.
+**LinkedList**  
+Manages the linked list and provides methods to:
+- Add a node to the end of the list
+- Display the list
+- Delete a node at a specific 1-based position
 
-delete(n)
-Deletes the node at the given 1-based index position.
+## Functionalities
 
-Error Handling
-The program handles invalid cases such as:
+- Append new nodes to the end of the list
+- Print all nodes in sequence
+- Delete any node by its position (with proper error checking)
 
-Deleting from an empty list
+## How to Use
 
-Invalid index values (like negative or too large)
+To use the linked list:
 
-Deleting the first node
+- Create an instance of the `LinkedList` class
+- Use `.append(data)` to add elements
+- Use `.print_list()` to display the linked list
+- Use `.delete(index)` to delete a node at the given 1-based index
 
-How to Run
-Make sure you have Python installed.
+These operations are demonstrated in the `__main__` block at the end of the code.
 
-Save the code in a file called linked_list.py.
+## Error Handling
 
-Open a terminal or command prompt.
+The code handles various edge cases such as:
 
-Run the file using the command:
+- Trying to delete from an empty list
+- Providing an index less than 1
+- Trying to delete a node at a position that doesn’t exist
 
-python linked_list.py
-
-Output Example
-The script demonstrates:
-
-Adding elements to the list
-
-Deleting specific nodes
-
-Handling edge cases like deleting from an empty list
+Meaningful error messages are printed for each invalid operation.
