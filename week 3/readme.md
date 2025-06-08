@@ -23,7 +23,7 @@
   - Heatmaps (using Seaborn)
 
 
-## 📌 Requirements
+## Requirements
 
 Make sure you have the following Python libraries installed:
 
